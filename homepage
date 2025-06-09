@@ -2,37 +2,98 @@ index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Hazel Traders</title>
-<style>
-  body { font-family: Arial, sans-serif; margin: 20px; }
-  header { text-align: center; }
-  .product { border: 1px solid #ccc; padding: 10px; margin: 10px 0; }
-  .product img { max-width: 150px; }
-  .buy-btn { background: #007bff; color: white; padding: 10px; text-decoration: none; border-radius: 5px; }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hazel Traders - Phone Accessories</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #0073e6;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .product {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .product img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .product-name {
+      margin: 10px 0 5px 0;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .product-price {
+      color: #6B8E23;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .buy-button {
+      background: #e63946;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+    }
+    footer {
+      background: #222;
+      color: #eee;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-<header>
-  <h1>Welcome to Hazel Traders</h1>
-  <p>Phone Accessories & Cases</p>
-</header>
+  <header>Hazel Traders</header>
 
-<section class="products">
-  <div class="product">
-    <h2>Phone Case Model A</h2>
-    <img src="https://via.placeholder.com/150" alt="Phone Case Model A" />
-    <p>Durable, stylish case for your phone.</p>
-    <a class="buy-btn" href="YOUR_INSTAMOJO_PAYMENT_LINK_HERE" target="_blank">Buy Now</a>
+  <div class="product-grid">
+    <!-- Repeat this product block for each product -->
+    <div class="product">
+      <img src="https://github.com/hazeltraders/hazeltraders.github.io/blob/main/iphone_case_cover%2015.jpg?raw=true" alt="Phone Case 1" />
+      <div class="product-name">TRUCASE Premium Magsafe Leatherette Case Exclusive for iPhone 15</div>
+      <div class="product-price">₹1299</div>
+      <a href="https://www.instamojo.com/@yourshop/product1" class="buy-button" target="_blank">Buy Now</a>
+    </div>
+
+    <div class="product">
+      <img src="https://github.com/hazeltraders/hazeltraders.github.io/blob/main/iphone_case_cover_16_pro_max.jpg?raw=true" alt="Phone Case 2" />
+      <div class="product-name">TRUCASE Premium Magsafe Leatherette Case Exclusive for iPhone 16</div>
+      <div class="product-price">₹1299</div>
+      <a href="https://www.instamojo.com/@yourshop/product2" class="buy-button" target="_blank">Buy Now</a>
+    </div>
+
+    <!-- Add more products here -->
   </div>
 
-  <div class="product">
-    <h2>Phone Case Model B</h2>
-    <img src="https://via.placeholder.com/150" alt="Phone Case Model B" />
-    <p>Shockproof and lightweight case.</p>
-    <a class="buy-btn" href="YOUR_INSTAMOJO_PAYMENT_LINK_HERE" target="_blank">Buy Now</a>
-  </div>
-</section>
+  <footer>
+    © 2025 Hazel Traders — Phone accessories and cases. Contact: hazeltraderscc@gmail.com
+  </footer>
 </body>
 </html>
